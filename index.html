@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>TIP CALCULATOR</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>TIP CALCULATOR</h1>
+      <div class="label">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label" style="border :1px solid #f1c40f; padding: 2.8px;" >
+    
+          <i style="font-size:24px" class="fa">&#xf186;</i>
+          <i class="fa fa-sun-o"></i>
+          <div class="ball">
+          </div>
+        </label>
+      </div>
+    </div>
+    <form action="">
+      <div class="control">
+      <p>ENTER TOTAL BILL</p>
+      <p class="input">
+        &#x20B9
+        <input type="number" name="" id="total-bill" placeholder="000">
+      </p>
+    </div>
+    <div class="control">
+      <p>CHOSE YOUR TIP</p>
+      <select name="" id="tip-percent">
+        <option value="0" disabled selected>Select From Here</option>
+        <option value="0.3">30%</option>
+        <option value="0.2">20%</option>
+        <option value="0.15">15%</option>
+        <option value="0.1">10%</option>
+        <option value="0.05">5%</option>
+      </select>
+    </div>
+    </form>
+    <p>Split The Bill</p>
+    <input type="number" id="split"><br>
+    <button id="calculate">Calculate</button>
+    <div class="totaltip">
+      <p>Total Per Person</p>
+      <p class="tip"> &#x20B9 <span id="tip">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="/script.js">
+
+  </script>
+</body>
+</html>
