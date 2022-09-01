@@ -20,7 +20,7 @@ calculate.addEventListener('click',()=>{
     // alert("Enter positive value");
     // tip.style.fontSize="10px;"
     
-    tip.innerHTML=("Please Enter Positive Values");
+    tip.innerHTML=("Please Enter + Values");
   }
   if(split<=1){
     // alert("Please Enter More Than 1 Person");
