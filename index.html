@@ -14,9 +14,9 @@
       <h1>TIP CALCULATOR</h1>
       <div class="label">
         <input type="checkbox" class="checkbox" id="checkbox">
-        <label for="checkbox" class="label" style="border :1px solid #f1c40f; padding: 2.8px;" >
+        <label for="checkbox" class="label" style="border: 1px solid #f1c40f" >
     
-          <i style="font-size:24px" class="fa">&#xf186;</i>
+          <i class="fa">&#xf186;</i>
           <i class="fa fa-sun-o"></i>
           <div class="ball">
           </div>
@@ -28,11 +28,11 @@
       <p>ENTER TOTAL BILL</p>
       <p class="input">
         &#x20B9
-        <input type="number" name="" id="total-bill" placeholder="000">
+        <input type="number" name=""  id="total-bill" placeholder="000" min="0">
       </p>
     </div>
     <div class="control">
-      <p>CHOSE YOUR TIP</p>
+      <p>CHOOSE YOUR TIP</p>
       <select name="" id="tip-percent">
         <option value="0" disabled selected>Select From Here</option>
         <option value="0.3">30%</option>
@@ -43,11 +43,11 @@
       </select>
     </div>
     </form>
-    <p>Split The Bill</p>
-    <input type="number" id="split"><br>
+    <p style="color: #f1c40f;">Split The Tip<br>
+    -> <input type="number" id="split" placeholder="How many person?" min="1"></p>
     <button id="calculate">Calculate</button>
     <div class="totaltip">
-      <p>Total Per Person</p>
+      <p>Tip Per Person</p>
       <p class="tip"> &#x20B9 <span id="tip">0.00</span></p>
     </div>
   </div>
