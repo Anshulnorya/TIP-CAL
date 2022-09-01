@@ -6,75 +6,80 @@
 }
 body{
   height: 100vh;
-  /* background-color: black ; */
+  background-color: black ;
   font-size: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   /* transition: 0.5s; */
 }
 .container.dark {
   background-color:#111;
   border:2px solid #f1c40f;
-  /* position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  border: 2px solid #5cbdb9;
-  width: 450px;
-  border-radius: 35px; */
-  /* text-align: center; */
-  /* box-shadow:1px 12px 12px rgba(1, 1, 1, 0.548) ; */
   transition: background 1s linear;
   
 }
+
+#calculate.dark{
+  border: 1px solid #f1c40f;
+}
+#calculate.dark:hover{
+  background-color: #f1c40f;
+  color: #111;
+}
 .container{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+
   border: 2px solid #111;
-  width: 450px;
-  border-radius: 35px;
-  text-align: center;
+  /* width: min(450px00vh); */
+  /* height: 100vh; */
+  border-radius: 30px;
   box-shadow:1px 12px 12px rgba(1, 1, 1, 0.548) ;
   background-color: white;
   transition: background 1s linear;
+  padding: 10px;
+  
   
 }
 h1{
   background-color:#111;
-  font-size: 35px;
+  font-size: 25px;
   margin: 10px;
   border-radius:10px ;
   color: #f1c40f;
-  padding: 2px;
+  /* padding: 2px; */
 }
 p{
   color: #f1c40f;
   font-weight: bolder;
 }
 .control{
-  margin: 25px 0px;
+  margin: 10px;
+  padding: 10px;
+  /* border: 2px solid; */
 }
 input{
   border: none;
-  padding: 6px;
+  padding: 5px;
   outline: none;
   text-align: center;
   border-bottom: 3px solid  #f1c40f;
   /* background-color: #d0bdf4; */
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 17px;
+  /* margin-top: 15px; */
+  border: 1px solid;
 }
 select{
   /* border: none; */
   outline: none;
   /* background-color: #ebf6f5; */
-  font-size: 17px;
-  margin-top: 20px;
+  /* font-size: 17px; */
+  margin: 5px;
   text-align: center;
-  color: #f1c40f;
-  border: 2px solid #f1c40f;
-  padding: 15px;
+  color: #111;
+  border: 1px solid black;
+  padding: 10px;
   border-radius: 20px;
   width: 70%;
 }
@@ -83,7 +88,8 @@ button#calculate{
   /* border: 2px solid black; */
   color: #f1c40f;
   border: 1px solid transparent;
-  padding: 15px 35px;
+  /* font-size: 20px; */
+  padding: 10px 25px;
   border-radius: 20px;
   margin-top: 10px;
   /* transition: all .3s ease; */
@@ -92,36 +98,41 @@ button#calculate:hover{
   background-color: white;
   color:black;
   font-weight: bolder;
-  border: 2px solid #111;
+  border: 1px solid #111;
+  transition: 0.5s;
+  cursor: pointer;
   /* color: #111; */
 }
 .totaltip{
   background-color:#111;
-  font-size: 25px;
+  /* font-size: 25px; */
   margin: 10px;
   border-radius:10px ;
   color:#f1c40f;
   padding: 2px;
+  /* width: 0%; */
 }
 p.tip{
   color: #f1c40f;
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 25px;
+  margin-top: 5px;
 }
 .checkbox{
   opacity: 0;
   position:absolute;
+  
 }
 .checkbox:checked + .label .ball{
-  transform: translateX(35px);
+  transform: translateX(30px);
 
 }
 .label{
   /* background-color: #111; */
+  font-size: 15px;
   position: relative;
   padding: 2px;
-  height: 30px;
-  width: 70px;
+  height: 25px;
+  width: 60px;
   border-radius: 50px;
   display: flex;
   justify-content:space-between;
@@ -133,8 +144,8 @@ p.tip{
 .ball{
   background-color: white;
   position: absolute;
-  height: 26px;
-  width: 26px;
+  height: 20px;
+  width: 20px;
   /* padding: 2px; */
   border-radius: 50%;
   transition: transform 0.2s linear;
@@ -144,10 +155,11 @@ p.tip{
 .fa-sun-o{
   color: #f1c40f !important;
   
+  
 }
 .fa{
   color: #f39c12;
-  padding: 5px;
+  /* padding: px; */
   
 }
 .header{
