@@ -17,10 +17,10 @@ calculate.addEventListener('click',()=>{
     tip.innerHTML=("Please Enter Values");
   }
   if(totalBill<0){
-    // alert("Enter positive value");
+    alert("Enter positive value");
     // tip.style.fontSize="10px;"
     
-    tip.innerHTML=("Please Enter + Values");
+   
   }
   if(split<=1){
     // alert("Please Enter More Than 1 Person");
