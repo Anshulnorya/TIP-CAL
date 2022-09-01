@@ -13,12 +13,18 @@ calculate.addEventListener('click',()=>{
 
   if(totalBill==="" || tipPercent==="" || split===""){
     // alert("Please Enter Values")
-    tip.innerHTML="Please Enter Values";
+    // alert("Please Enter Values");
+    tip.innerHTML=("Please Enter Values");
   }
-  if(totalBill<0||split<0){
+  if(totalBill<0){
     // alert("Enter positive value");
     // tip.style.fontSize="10px;"
-    tip.innerHTML="Please Enter Positive Values";
+    
+    tip.innerHTML=("Please Enter Positive Values");
+  }
+  if(split<=1){
+    // alert("Please Enter More Than 1 Person");
+    tip.innerHTML=(`Enter > 1`);
   }
 });
 
