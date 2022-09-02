@@ -3,7 +3,7 @@
 ------------
 
 ## Description 🤙
-- This is a Tip calculater. Which calculate the tip among 2 or more person.
+- This is a front end project which will help you to split the tip between your friends.
 
 ------------
 
